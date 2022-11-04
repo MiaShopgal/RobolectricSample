@@ -1,8 +1,7 @@
 package evan.chen.tutorial.tdd.robolectricsample
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 
 class ResultActivity : AppCompatActivity() {
 
@@ -10,6 +9,6 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val id = intent.getStringExtra("ID")
+        intent.getStringExtra("ID")
     }
 }

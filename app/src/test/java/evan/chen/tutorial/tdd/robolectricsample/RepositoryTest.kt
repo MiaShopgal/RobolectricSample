@@ -35,6 +35,6 @@ class RepositoryTest {
             argThat { value -> value == userId }
         )
         //檢查SharedPreference是否有呼叫commit
-        verify(sharedPrefsEditor).commit()
+        verify(sharedPrefsEditor).apply()
     }
 }
